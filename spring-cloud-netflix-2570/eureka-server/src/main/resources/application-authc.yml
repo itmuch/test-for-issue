@@ -1,0 +1,19 @@
+server:
+  port: 8761
+eureka:
+  client:
+    # \u662F\u5426\u8981\u6CE8\u518C\u5230\u5176\u4ED6eureka server
+    registerWithEureka: false
+    # \u8981\u4E0D\u8981\u4ECE\u5176\u4ED6eureka server\u8282\u70B9\u83B7\u53D6\u6570\u636E
+    fetchRegistry: false
+    serviceUrl:
+      # \u6CE8\u518C\u5730\u5740
+      defaultZone: http://localhost:8761/eureka/
+
+
+security:
+  basic:
+    enabled: true # 开启基于HTTP basic的认证
+  user:
+    name: user # 配置登录的账号是user
+    password: password123 # 配置登录的密码是password123
